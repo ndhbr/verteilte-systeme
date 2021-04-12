@@ -7,9 +7,6 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,6 +14,8 @@ import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 
 public class Browser extends JFrame implements ActionListener {
+
+    private static final long serialVersionUID = 1L;
 
     private int downloads;
     private JProgressBar[] balken;

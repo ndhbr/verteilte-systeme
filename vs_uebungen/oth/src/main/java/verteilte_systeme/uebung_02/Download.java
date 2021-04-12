@@ -2,7 +2,6 @@ package verteilte_systeme.uebung_02;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.locks.Condition;
 
 import javax.swing.JProgressBar;
 
