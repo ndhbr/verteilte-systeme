@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Aufgabe 1.1)",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "1"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 2.1)",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "2 1"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 2.2)",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "2 2"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 3.1) Client",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "3 1 client"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 3.1) Server",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "3 1 server"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 3.2) Webserver",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "3 2"
+        },
+    ]
+}
