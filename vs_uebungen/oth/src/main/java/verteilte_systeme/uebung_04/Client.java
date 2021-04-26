@@ -16,26 +16,28 @@ public class Client {
             Socket s = new Socket(host, port);
             InputStream in = s.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-            String response;
 
             OutputStream out = s.getOutputStream();
             PrintWriter writer = new PrintWriter(out);
 
-            String eingang = reader.readLine();
+            while (s != null) {
+                if (console != null) {
+                    System.out.print("Eingabe: ");
+                    String request = console.readLine();
 
-            System.out.println(eingang);
+                    if (request == "EXIT") {
+                        s.close();
+                        s = null;
+                        break;
+                    }
 
-            
-            if (console != null) {
-                response = console.readLine();
-            } else {
-                response = "Bruh, ich habe keine Antwortmöglichkeit";
+                    writer.println(request);
+                    writer.flush();
+                }
+
+                String response = reader.readLine();
+                System.out.println(response);
             }
-
-            writer.println(response);
-            writer.flush();
-
-            s.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

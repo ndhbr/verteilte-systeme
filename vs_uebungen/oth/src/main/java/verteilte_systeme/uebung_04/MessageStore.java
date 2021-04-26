@@ -14,14 +14,14 @@ public class MessageStore {
     }
 
     public ArrayList<Message> getMessages(User receiver) {
-        ArrayList<Message> messages = new ArrayList<Message>();
+        ArrayList<Message> tmpMessages = new ArrayList<Message>();
         
         for (Message message : messages) {
             if (message.getReceiver().equals(receiver)) {
-                messages.add(message);
+                tmpMessages.add(message);
             }
         }
 
-        return messages;
+        return tmpMessages;
     }
 }

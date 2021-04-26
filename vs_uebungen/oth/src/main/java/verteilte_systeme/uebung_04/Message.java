@@ -22,4 +22,8 @@ public class Message {
     public String getText() {
         return text;
     }
+
+    public String toString() {
+        return "Sent by " + sender.getUsername() + ": " + text;
+    }
 }
