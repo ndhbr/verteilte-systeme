@@ -3,6 +3,7 @@ package verteilte_systeme;
 import verteilte_systeme.uebung_01.Uebung_01;
 import verteilte_systeme.uebung_02.Uebung_02;
 import verteilte_systeme.uebung_03.Uebung_03;
+import verteilte_systeme.uebung_04.Uebung_04;
 
 /**
  * Hello world!
@@ -25,6 +26,9 @@ public class App {
                     break;
                 case 3:
                     new Uebung_03(slicedArgs);
+                    break;
+                case 4:
+                    new Uebung_04(slicedArgs);
                     break;
             }
         }
