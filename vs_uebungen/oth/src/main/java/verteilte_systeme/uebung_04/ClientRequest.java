@@ -33,6 +33,7 @@ public class ClientRequest implements Runnable {
 
             while (true) {
                 String request = reader.readLine();
+                System.out.println("Anfrage erhalten: " + request);
                 processMessage(request, writer);
             }
         } catch (IOException e) {
@@ -41,13 +42,15 @@ public class ClientRequest implements Runnable {
     }
 
     private void processMessage(String message, PrintWriter writer) {
-        String type = message.substring(0, 2);
+        String type = message.substring(0, 3);
 
         switch (type) {
             case "REG":
                 // Register
                 String username = message.substring(3);
                 messagingService.addUser(new User(username));
+                writer.println("User registered (" + username + ")");
+                writer.flush();
                 break;
             case "SND":
                 // Send message
@@ -60,7 +63,9 @@ public class ClientRequest implements Runnable {
     
                     if (sender != null && receiver != null) {
                         messagingService.addMessage(sender, receiver, request[2]);
-                    }    
+                    }
+                    writer.println("Message sent to " + receiverUsername);
+                    writer.flush();
                 }
                 break;
             case "RCV":
@@ -68,7 +73,8 @@ public class ClientRequest implements Runnable {
                 String receiver = message.substring(3);
                 User user = messagingService.getUser(receiver);
                 ArrayList<Message> messages = messagingService.getMessages(user);
-                writer.write(messages.toString());
+                writer.println(messages.toString());
+                writer.flush();
                 break;
         }
     }
