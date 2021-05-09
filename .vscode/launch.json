@@ -94,5 +94,59 @@
             "console": "integratedTerminal",
             "args": "5 1 server"
         },
+        {
+            "type": "java",
+            "name": "Aufgabe 6) Client",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "6 1 client"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 6) Server",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "6 1 server"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 6.2) Client",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "62 1 client"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 6.2) Server",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "62 1 server"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 6.3) Client",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "63 1 client"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 6.3) Server",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "63 1 server"
+        }
     ]
 }

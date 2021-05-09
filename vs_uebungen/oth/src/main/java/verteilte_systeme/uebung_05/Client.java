@@ -20,6 +20,5 @@ public class Client {
         } catch (NotBoundException e) {
             e.printStackTrace();
         }
-        
     }
 }

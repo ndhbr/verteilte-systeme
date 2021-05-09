@@ -5,6 +5,9 @@ import verteilte_systeme.uebung_02.Uebung_02;
 import verteilte_systeme.uebung_03.Uebung_03;
 import verteilte_systeme.uebung_04.Uebung_04;
 import verteilte_systeme.uebung_05.Uebung_05;
+import verteilte_systeme.uebung_06.Uebung_06;
+import verteilte_systeme.uebung_06_2.Uebung_06_2;
+import verteilte_systeme.uebung_06_3.Uebung_06_3;
 
 /**
  * Hello world!
@@ -33,6 +36,15 @@ public class App {
                     break;
                 case 5:
                     new Uebung_05(slicedArgs);
+                    break;
+                case 6:
+                    new Uebung_06(slicedArgs);
+                    break;
+                case 62:
+                    new Uebung_06_2(slicedArgs);
+                    break;
+                case 63:
+                    new Uebung_06_3(slicedArgs);
                     break;
             }
         }
