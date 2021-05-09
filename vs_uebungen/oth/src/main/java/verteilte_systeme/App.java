@@ -4,6 +4,7 @@ import verteilte_systeme.uebung_01.Uebung_01;
 import verteilte_systeme.uebung_02.Uebung_02;
 import verteilte_systeme.uebung_03.Uebung_03;
 import verteilte_systeme.uebung_04.Uebung_04;
+import verteilte_systeme.uebung_05.Uebung_05;
 
 /**
  * Hello world!
@@ -30,12 +31,16 @@ public class App {
                 case 4:
                     new Uebung_04(slicedArgs);
                     break;
+                case 5:
+                    new Uebung_05(slicedArgs);
+                    break;
             }
         }
     }
 
     /**
      * Cuts the first element of array and returns the array with length - 1
+     * 
      * @param args
      * @return
      */

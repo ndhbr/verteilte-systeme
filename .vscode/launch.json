@@ -76,5 +76,23 @@
             "console": "integratedTerminal",
             "args": "4 1 server"
         },
+        {
+            "type": "java",
+            "name": "Aufgabe 5) Client",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "5 1 client"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe 5) Server",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "5 1 server"
+        },
     ]
 }
