@@ -1,12 +1,12 @@
 package verteilte_systeme.uebung_02;
 
-import verteilte_systeme.App;
+// import verteilte_systeme.App;
 
 public class Uebung_02 {
     public Uebung_02(String[] args) {
         if (args.length > 0) {
             int aufgabenNr = Integer.parseInt(args[0]);
-            String[] slicedArgs = App.cutFirstElementOfArray(args);
+            // String[] slicedArgs = App.cutFirstElementOfArray(args);
 
             // select exercise
             switch (aufgabenNr) {
