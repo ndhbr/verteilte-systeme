@@ -15,6 +15,15 @@
         },
         {
             "type": "java",
+            "name": "Aufgabe 1.1) Wiederholung",
+            "request": "launch",
+            "mainClass": "verteilte_systeme.App",
+            "projectName": "oth",
+            "console": "integratedTerminal",
+            "args": "1001"
+        },
+        {
+            "type": "java",
             "name": "Aufgabe 2.1)",
             "request": "launch",
             "mainClass": "verteilte_systeme.App",

@@ -17,24 +17,7 @@
         <xml.bind.version>3.0.0</xml.bind.version>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>oth</id>
-            <url>http://im-lamport:8082/artifactory/ext-release-local/</url>
-        </repository>
-    </repositories>
-
     <dependencies>
-        <dependency>
-            <groupId>com.hazelcast</groupId>
-            <artifactId>hazelcast</artifactId>
-            <version>3.7.8</version>
-        </dependency>
-        <dependency>
-            <groupId>de.othr.vs</groupId>
-            <artifactId>vs-rest-mapreduce</artifactId>
-            <version>1.2</version>
-        </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-jaxb</artifactId>

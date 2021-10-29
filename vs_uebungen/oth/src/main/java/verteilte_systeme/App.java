@@ -1,6 +1,7 @@
 package verteilte_systeme;
 
 import verteilte_systeme.uebung_01.Uebung_01;
+import verteilte_systeme.uebung_01_2.Uebung_01_2;
 import verteilte_systeme.uebung_02.Uebung_02;
 import verteilte_systeme.uebung_03.Uebung_03;
 import verteilte_systeme.uebung_04.Uebung_04;
@@ -45,6 +46,9 @@ public class App {
                     break;
                 case 63:
                     new Uebung_06_3(slicedArgs);
+                    break;
+                case 1001:
+                    new Uebung_01_2(slicedArgs);
                     break;
             }
         }
